@@ -503,6 +503,42 @@
     </div>
   </section>
 
+  <!-- ===== PDF EMBED ===== -->
+<section class="pdf-section" id="tableau">
+  <div class="pdf-container">
+    <div class="section-label mono reveal-up">07 — Document</div>
+    <h2 class="section-title reveal-up delay-1">Tableau de<br /><em>synthèse BTS SIO</em></h2>
+
+    <div class="pdf-wrapper reveal-up delay-2">
+      <div class="pdf-toolbar">
+        <span class="mono pdf-filename">Tableau-de-synthèse · E4 · 2025</span>
+          <svg width="13" height="13" viewBox="0 0 12 12" fill="none">
+            <path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          Ouvrir dans un nouvel onglet
+        </a>
+      </div>
+
+      <div class="pdf-embed-wrap">
+        <iframe
+          src="folder/Tableau-de-synthèse-Epreuve E4-BTS-SIO-2025-3.pdf"
+          class="pdf-iframe"
+          title="Tableau de synthèse BTS SIO"
+          loading="lazy"
+        ></iframe>
+        <div class="pdf-fallback">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14,2 14,8 20,8"/>
+          </svg>
+          <p class="mono">Aperçu non disponible sur cet appareil</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="footer-top">
@@ -781,7 +817,10 @@
         desc: "Jeu de tirage TCG Pokémon développé avec React Native et Expo Go. Interface mobile fluide avec gestion d'état avancée, animations et logique de tirage de cartes aléatoires.",
         details: [{ label: 'Type', val: 'Application mobile' }, { label: 'Année', val: '2024' }, { label: 'Contexte', val: 'Projet BTS SIO' }, { label: 'Statut', val: 'En développement' }],
         tags: ['Expo', 'React Native', 'TypeScript', 'MariaDB', 'API REST'],
-        actions: [{ label: 'GitHub', href: 'https://github.com/PokeCard-Masters/pokecard_masters', type: 'ghost' }]
+        actions: [
+          { label: 'GitHub', href: 'https://github.com/PokeCard-Masters/pokecard_masters', type: 'ghost' },
+          { label: 'Réalisation professionnelles', type: 'ghost'},
+          { label: 'Dossier projet', type: 'ghost'}]
       },
       reseau: {
         num: '02', title: "Plan d'adressage réseau", subtitle: 'Cisco Packet Tracer · VLAN · IP', img: 'img/cisco.png',
@@ -794,7 +833,10 @@
         desc: "API RESTful complète pour le backend du jeu TCG Pokémon. Architecture MVC, MariaDB, JWT, pagination et documentation Swagger / OpenAPI.",
         details: [{ label: 'Type', val: 'Backend API' }, { label: 'Année', val: '2024' }, { label: 'Contexte', val: 'Projet BTS SIO' }, { label: 'Statut', val: 'Fonctionnel' }],
         tags: ['Django', 'Python', 'MariaDB', 'REST', 'JWT', 'Swagger'],
-        actions: [{ label: 'GitHub', href: 'https://github.com/PokeCard-Masters/pokecard_masters', type: 'ghost' }]
+        actions: [
+          { label: 'GitHub', href: 'https://github.com/PokeCard-Masters/pokecard_masters', type: 'ghost' },
+          { label: 'Réalisation professionnelles', type: 'ghost'},
+          { label: 'Dossier projet', type: 'ghost'}]
       },
       robbie: {
         num: '03', title: 'Portfolio Robbie Lens', subtitle: 'HTML5 · CSS3 ·', img: 'img/robbie-lens.png',
@@ -890,7 +932,6 @@
         document.body.style.overflow = '';
       }
     });
-    // La touche Escape est déjà gérée par ton listener existant — pas besoin d'en rajouter
   </script>
 </body>
 
